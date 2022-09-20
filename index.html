@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <title>Web Studio</title>
@@ -15,24 +15,31 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a lang="en" href="" class="logo"
+      <nav class="header-nav">
+        <a lang="en" href="" class="logo header-logo"
           ><span class="logo-colored">Web</span>Studio</a
         >
-        <ul>
-          <li><a class="nav-link" href="./index.html">Cтудія</a></li>
-          <li><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="nav-link" href="">Контакти</a></li>
+        <ul class="list">
+          <li>
+            <a class="link nav-link current" href="./index.html">Cтудія</a>
+          </li>
+          <li>
+            <a class="link nav-link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li><a class="link nav-link" href="">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="list">
         <li>
-          <a class="contact-header" lang="en" href="mailto:info@devstudio.com"
+          <a
+            class="link contact-header"
+            lang="en"
+            href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a class="contact-header" href="tel:++380961111111"
+          <a class="link contact-header" href="tel:++380961111111"
             >+38 096 111 11 11</a
           >
         </li>
@@ -46,9 +53,9 @@
         </button>
       </section>
       <section>
-        <h2 class="title">Про нас</h2>
+        <h2 class="title section-title">Про нас</h2>
         <!---Знаю що цього немає, але переглянув вебінар і вирішив, що логічний заголовок тут доречний -->
-        <ul>
+        <ul class="list">
           <li>
             <h3 class="title about-title">Увага до деталей</h3>
             <p class="about-text">
@@ -79,8 +86,8 @@
         </ul>
       </section>
       <section>
-        <h2 class="title specialty-title">Чим ми займаємося</h2>
-        <ul>
+        <h2 class="title section-title">Чим ми займаємося</h2>
+        <ul class="list">
           <li><img src="./images/box_1.jpg" alt="Програмування" /></li>
           <li><img src="./images/box_2.jpg" alt="Адаптив" /></li>
           <li><img src="./images/box_3.jpg" alt="Дизайн" /></li>
@@ -88,7 +95,7 @@
       </section>
       <section>
         <h2 class="title team-title">Наша команда</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/team_card_1.jpg"
@@ -128,27 +135,30 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a lang="en" class="logo" href=""
+    <footer class="footer">
+      <a lang="en" class="link logo footer-logo" href=""
         ><span class="logo-colored">Web</span>Studio</a
       >
-      <address class="address">
-        <ul>
+      <address>
+        <ul class="list">
           <li>
             <a
-              class="address-text"
+              class="link address-text"
               href="https://goo.gl/maps/PEAdx3Ye2BHzQbeu5"
             >
               м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
           <li>
-            <a lang="en" class="contact-footer" href="mailto:info@devstudio.com"
+            <a
+              lang="en"
+              class="link contact-footer"
+              href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="contact-footer" href="tel:++380961111111"
+            <a class="link contact-footer" href="tel:++380961111111"
               >+38 096 111 11 11</a
             >
           </li>
