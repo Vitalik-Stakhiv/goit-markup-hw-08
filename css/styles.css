@@ -23,9 +23,6 @@ body {
   color: var(--title-main-color);
 }
 
-.header-nav .current {
-  color: var(--secondary-color);
-}
 /* main page style */
 /* header style */
 .logo {
@@ -50,6 +47,9 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--secondary-color);
+}
+.current {
   color: var(--secondary-color);
 }
 .contact-header {
