@@ -37,7 +37,7 @@
           </ul>
         </nav>
         <ul class="list contact-list">
-          <li>
+          <li class="contact-item">
             <a
               class="link contact-header"
               lang="en"
@@ -45,7 +45,7 @@
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contact-item">
             <a class="link contact-header" href="tel:++380961111111"
               >+38 096 111 11 11</a
             >
@@ -55,56 +55,62 @@
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">
-          Ефективні рішення для <br />
-          вашого бізнесу
-        </h1>
-        <button class="button hero-button" type="button">
-          Замовити послугу
-        </button>
+        <div class="container">
+          <h1 class="hero-title">
+            Ефективні рішення для <br />
+            вашого бізнесу
+          </h1>
+          <button class="button hero-button" type="button">
+            Замовити послугу
+          </button>
+        </div>
       </section>
-      <section class="container about-section">
-        <!-- title to hide-->
-        <h2 class="title section-title visually-hidden">Про нас</h2>
-        <ul class="list about-list">
-          <li>
-            <h3 class="title about-title">Увага до деталей</h3>
-            <p class="about-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3 class="title about-title">Пунктуальність</h3>
-            <p class="about-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <h3 class="title about-title">Планування</h3>
-            <p class="about-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3 class="title about-title">Сучасні технології</h3>
-            <p class="about-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <!-- title to hide-->
+          <h2 class="title section-title visually-hidden">Про нас</h2>
+          <ul class="list about-list">
+            <li class="about-item">
+              <h3 class="title about-title">Увага до деталей</h3>
+              <p class="about-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="about-item">
+              <h3 class="title about-title">Пунктуальність</h3>
+              <p class="about-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="about-item">
+              <h3 class="title about-title">Планування</h3>
+              <p class="about-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="about-item">
+              <h3 class="title about-title">Сучасні технології</h3>
+              <p class="about-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="container doing-section">
-        <h2 class="title section-title">Чим ми займаємося</h2>
-        <ul class="list doing-list">
-          <li><img src="./images/box_1.jpg" alt="Програмування" /></li>
-          <li><img src="./images/box_2.jpg" alt="Адаптив" /></li>
-          <li><img src="./images/box_3.jpg" alt="Дизайн" /></li>
-        </ul>
+      <section class="section doing-section">
+        <div class="container">
+          <h2 class="title section-title">Чим ми займаємося</h2>
+          <ul class="list doing-list">
+            <li><img src="./images/box_1.jpg" alt="Програмування" /></li>
+            <li><img src="./images/box_2.jpg" alt="Адаптив" /></li>
+            <li><img src="./images/box_3.jpg" alt="Дизайн" /></li>
+          </ul>
+        </div>
       </section>
-      <section class="team-section">
+      <section class="section team-section">
         <div class="container">
           <h2 class="title section-title">Наша команда</h2>
           <ul class="list team-list">
@@ -114,8 +120,10 @@
                 alt="Фото Ігор Дем'яненка"
                 width="270"
               />
-              <h3 class="team-name">Ігор Дем'яненко</h3>
-              <p class="team-occupation" lang="en">Product Designer</p>
+              <div class="team-profile">
+                <h3 class="team-name">Ігор Дем'яненко</h3>
+                <p class="team-occupation" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -123,8 +131,10 @@
                 alt="Фото Ольги Рєпіної"
                 width="270"
               />
-              <h3 class="team-name">Ольга Рєпіна</h3>
-              <p class="team-occupation" lang="en">Frontend Developer</p>
+              <div class="team-profile">
+                <h3 class="team-name">Ольга Рєпіна</h3>
+                <p class="team-occupation" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -132,8 +142,10 @@
                 alt="Фото Миколи Тарасова"
                 width="270"
               />
-              <h3 class="team-name">Микола Тарасов</h3>
-              <p class="team-occupation" lang="en">Marketing</p>
+              <div class="team-profile">
+                <h3 class="team-name">Микола Тарасов</h3>
+                <p class="team-occupation" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -141,8 +153,10 @@
                 alt="Фото Михайла Єрмакова"
                 width="270"
               />
-              <h3 class="team-name">Михайло Єрмаков</h3>
-              <p class="team-occupation" lang="en">UI Designer</p>
+              <div class="team-profile">
+                <h3 class="team-name">Михайло Єрмаков</h3>
+                <p class="team-occupation" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
