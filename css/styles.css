@@ -318,7 +318,7 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  stroke: var(--secondary-color);
 }
 
 .clients-icon {
