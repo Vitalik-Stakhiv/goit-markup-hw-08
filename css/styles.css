@@ -123,10 +123,9 @@ img {
 .contact-list {
   display: flex;
   align-items: center;
+  column-gap: 50px;
 }
-.contact-item:first-child {
-  margin-right: 50px;
-}
+
 .contact-header {
   font-weight: 500;
   line-height: 1.14;
@@ -138,6 +137,7 @@ img {
 .contact-footer:focus {
   color: var(--secondary-color);
 }
+
 .contact-icon {
   fill: currentColor;
   margin-right: 10px;
@@ -149,9 +149,6 @@ img {
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
@@ -160,6 +157,9 @@ img {
     ),
     url("../images/hero_img.jpg");
   background-color: var(--footer-background-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   text-align: center;
 }
@@ -315,7 +315,8 @@ img {
   border-radius: 4px;
   color: var(--icon-color);
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
