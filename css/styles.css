@@ -130,6 +130,8 @@ img {
   font-weight: 500;
   line-height: 1.14;
   color: inherit;
+  display: flex;
+  align-items: center;
 }
 .contact-header:hover,
 .contact-header:focus,
@@ -203,16 +205,16 @@ img {
   margin-right: 30px;
 }
 .icon-section {
+  height: 120px;
   border-radius: 4px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-bottom: 30px;
   background-color: #f5f4fa;
-  text-align: center;
 }
-.about-icon {
-  margin-left: auto;
-}
+
 .section-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -281,8 +283,9 @@ img {
   column-gap: 10px;
 }
 .social-link {
-  display: block;
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
 }
@@ -416,7 +419,11 @@ img {
   column-gap: 30px;
   row-gap: 30px;
 }
-.portfolio-item:hover {
+.portfolio-link {
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
