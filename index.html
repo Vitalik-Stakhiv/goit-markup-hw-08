@@ -65,9 +65,18 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="button hero-button" type="button">
+          <button class="button hero-button" type="button" data-modal-open>
             Замовити послугу
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-btn" data-modal-close>
+                <svg class="social-icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section">
@@ -129,9 +138,30 @@
         <div class="container">
           <h2 class="title section-title">Чим ми займаємося</h2>
           <ul class="list doing-list">
-            <li><img src="./images/box_1.jpg" alt="Програмування" /></li>
-            <li><img src="./images/box_2.jpg" alt="Адаптив" /></li>
-            <li><img src="./images/box_3.jpg" alt="Дизайн" /></li>
+            <li>
+              <div class="doing-thumb">
+                <img src="./images/box_1.jpg" alt="Програмування" />
+                <div class="doing-overlay">
+                  <p class="overlay-text">Десктопні додатки</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="doing-thumb">
+                <img src="./images/box_2.jpg" alt="Адаптив" />
+                <div class="doing-overlay">
+                  <p class="overlay-text">Мобільні додатки</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="doing-thumb">
+                <img src="./images/box_3.jpg" alt="Дизайн" />
+                <div class="doing-overlay">
+                  <p class="overlay-text">Дизайнерські рішення</p>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -408,5 +438,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
