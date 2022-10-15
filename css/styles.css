@@ -705,7 +705,7 @@ img {
   color: var(--secondary-color);
 }
 .policy-link:visited {
-  color: inherit;
+  color: var(--main-text-color);
 }
 .policy-check {
   appearance: none;
