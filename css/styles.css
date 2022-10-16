@@ -385,7 +385,10 @@ img {
 .footer-content {
   display: flex;
   align-items: baseline;
-  column-gap: 93px;
+}
+.footer-main {
+  margin-right: 70px;
+  flex-grow: 1;
 }
 
 .footer-address {
@@ -409,6 +412,9 @@ img {
   color: var(--secondary-text-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.footer-socials {
+  margin-right: 93px;
 }
 .footer-title {
   font-size: inherit;
@@ -618,9 +624,15 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-main-color);
   text-align: center;
+  display: block;
+}
+.form-list {
+  margin-bottom: 10px;
 }
 .form-item {
   position: relative;
+}
+.form-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -631,6 +643,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-label {
+  display: block;
   font-size: 12px;
   line-height: 1.16;
 
@@ -661,6 +674,7 @@ img {
 }
 
 .form-comment {
+  display: block;
   resize: none;
   width: 100%;
   margin-top: 4px;
@@ -684,12 +698,12 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 .policy-text {
-  margin-left: 12px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .icon-check {
   display: inline-block;
@@ -704,9 +718,7 @@ img {
 .policy-link {
   color: var(--secondary-color);
 }
-.policy-link:visited {
-  color: var(--main-text-color);
-}
+
 .policy-check {
   appearance: none;
 }
