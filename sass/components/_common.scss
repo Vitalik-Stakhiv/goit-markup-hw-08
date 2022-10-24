@@ -37,7 +37,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.current {
+.nav-list__link--current {
   color: $secondary-color;
   &::after {
     content: "";

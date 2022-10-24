@@ -1,7 +1,7 @@
-.team-section__card .social-link {
+.team__item .social__link {
   color: $icon-color;
 }
-.social-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +16,6 @@
     color: $secondary-text-color;
   }
 }
-.social-icon {
+.social__icon {
   fill: currentColor;
 }

@@ -1,15 +1,15 @@
-.doing-section {
+.section--no-padding-top {
   padding-top: 0;
 }
-.doing-section__list {
+.doing__list {
   display: flex;
   justify-content: space-between;
 }
-.doing-section__item {
+.doing__item {
   position: relative;
 }
 
-.doing-section__text {
+.doing__text {
   position: absolute;
   bottom: 0;
   left: 0;

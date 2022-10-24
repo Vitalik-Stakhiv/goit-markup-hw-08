@@ -1,9 +1,9 @@
-.clients-section__list {
+.clients__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.clients-section__link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +20,6 @@
     border-color: $secondary-color;
   }
 }
-.clients-section__icon {
+.clients__icon {
   fill: currentColor;
 }

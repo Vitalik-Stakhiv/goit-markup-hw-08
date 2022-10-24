@@ -1,10 +1,10 @@
-.about-section__list {
+.about__list {
   display: flex;
 }
-.about-section__item:not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 30px;
 }
-.about-section__box {
+.about__box {
   height: 120px;
   border-radius: 4px;
   display: flex;
@@ -15,14 +15,14 @@
   background-color: #f5f4fa;
 }
 
-.about-section__title {
+.about__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.about-section__text {
+.about__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
