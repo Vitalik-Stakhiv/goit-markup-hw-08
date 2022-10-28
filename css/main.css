@@ -636,6 +636,11 @@ body {
     width: 358px;
   }
 }
+@media (max-width: 479px) {
+  .footer-subscription__input {
+    width: 100%;
+  }
+}
 
 .footer-subscription__input:hover,
 .footer-subscription__input:focus {
