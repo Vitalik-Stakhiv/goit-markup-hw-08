@@ -14,7 +14,7 @@
 }
 .nav-list {
   //   display: flex;
-  //   column-gap: 50px;
+  column-gap: 50px;
 }
 .nav-list__link {
   position: relative;
@@ -32,7 +32,7 @@
 }
 
 .contact-list {
-  display: flex;
+  //   display: flex;
   align-items: center;
   column-gap: 50px;
 }
