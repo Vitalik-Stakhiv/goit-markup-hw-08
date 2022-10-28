@@ -1,14 +1,16 @@
 .clients__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 30px;
 }
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 92px;
+  width: 210px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: $icon-color;
@@ -19,7 +21,15 @@
     color: $secondary-color;
     border-color: $secondary-color;
   }
+
+  @media (min-width: 768px) {
+    width: 226px;
+  }
+  @media (min-width: 1200px) {
+    width: 170px;
+  }
 }
+
 .clients__icon {
   fill: currentColor;
 }

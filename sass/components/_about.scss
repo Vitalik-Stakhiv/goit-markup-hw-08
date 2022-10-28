@@ -1,16 +1,28 @@
 .about__list {
-  display: flex;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
 }
-.about__item:not(:last-child) {
-  margin-right: 30px;
+.about__item {
+  max-width: 450px;
+  @media (min-width: 768px) {
+    width: 354px;
+  }
+  @media (min-width: 1200px) {
+    width: 270px;
+  }
 }
+
 .about__box {
   height: 120px;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-bottom: 30px;
   background-color: #f5f4fa;
 }

@@ -4,15 +4,27 @@ body {
   color: $main-text-color;
 }
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .title {
   font-weight: 700;
