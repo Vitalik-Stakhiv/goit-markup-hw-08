@@ -7,8 +7,12 @@
   text-decoration: none;
 }
 .header__logo {
+  flex-grow: 0;
   color: #000;
-  margin-right: 93px;
+  margin-right: 88px;
+  @media (min-width: 1200px) {
+    margin-right: 92px;
+  }
 }
 .logo--colored {
   color: $secondary-color;
