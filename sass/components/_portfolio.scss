@@ -1,17 +1,21 @@
 .project__button-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   column-gap: 8px;
+  row-gap: 15px;
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 30px;
   row-gap: 30px;
 }
 .portfolio-item {
-  width: calc((100% - 60px) / 3);
 }
 .card {
   display: block;
