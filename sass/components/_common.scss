@@ -60,7 +60,7 @@ body {
     height: 4px;
     border-radius: 2px;
     background-color: $secondary-color;
-    @media (min-width: 786px) {
+    @media (min-width: 768px) {
       display: block;
     }
     @media (min-width: 1200px) {

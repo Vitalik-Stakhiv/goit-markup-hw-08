@@ -3,24 +3,27 @@
 }
 .header__mobile {
   display: none;
-  overflow: hidden;
   &.is-open {
     display: block;
-    position: absolute;
-  }
-  @media (max-width: 767px) {
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+
     top: 0;
     left: 0;
-    width: 100%;
     padding: 48px 40px;
     background-color: $secondary-text-color;
     overflow-y: hidden;
   }
+
   @media (min-width: 768px) {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
     align-items: center;
+    &.is-open {
+      display: none;
+    }
   }
 }
 .header__container {

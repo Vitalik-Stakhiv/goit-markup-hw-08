@@ -9,7 +9,9 @@
 .header__logo {
   flex-grow: 0;
   color: #000;
-  margin-right: 88px;
+  @media (min-width: 768px) {
+    margin-right: 87px;
+  }
   @media (min-width: 1200px) {
     margin-right: 92px;
   }
