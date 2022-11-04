@@ -15,10 +15,22 @@
 }
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 30px;
   row-gap: 30px;
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+  }
+}
+.portfolio-item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .card {
@@ -37,8 +49,14 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
+
+.card__text--padding {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
+}
 .card__title {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
