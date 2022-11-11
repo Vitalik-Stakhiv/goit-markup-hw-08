@@ -21,6 +21,7 @@
 }
 .footer-main {
   @media screen and(min-width: 1200px) {
+    margin-right: 70px;
     flex-grow: 1;
   }
 }
@@ -49,7 +50,6 @@
   letter-spacing: 0.03em;
 }
 .footer-socials {
-  margin-top: 60px;
   @media screen and(min-width: 1200px) {
     margin-right: 93px;
   }
