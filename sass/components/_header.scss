@@ -140,13 +140,16 @@
 .header__social-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
 
   @media (min-width: 768px) {
     display: none;
   }
 }
-
+.header__social-item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
 .header__social-link {
   font-weight: 500;
   font-size: 18px;

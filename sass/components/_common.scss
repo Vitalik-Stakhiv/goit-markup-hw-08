@@ -55,7 +55,10 @@ body {
   overflow: hidden;
 }
 .nav-list__link--current {
-  color: $secondary-color;
+  @media (max-width: 768px) {
+    color: $secondary-color;
+  }
+
   &::after {
     content: "";
     display: none;
