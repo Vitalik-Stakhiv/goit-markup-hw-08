@@ -50,6 +50,9 @@
   letter-spacing: 0.03em;
 }
 .footer-socials {
+  @media (max-width: 768px) {
+    margin-top: 60px;
+  }
   @media screen and(min-width: 1200px) {
     margin-right: 93px;
   }
